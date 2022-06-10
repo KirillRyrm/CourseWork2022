@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1654812673 source:d:\ki_123_1kurs\coursework2022\coursework\player.cpp
+	<stdexcept>
+	"Player.h"
+
+1654882666 d:\ki_123_1kurs\coursework2022\coursework\player.h
+	<string>
+	"Person.h"
+	"Position.h"
+
+1654796188 source:d:\ki_123_1kurs\coursework2022\coursework\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<iomanip>
+
+1654796498 source:d:\ki_123_1kurs\coursework2022\coursework\person.cpp
+	<stdexcept>
+	<string>
+	"Person.h"
+
+1654812710 d:\ki_123_1kurs\coursework2022\coursework\person.h
+	<string>
+
+1654807493 d:\ki_123_1kurs\coursework2022\coursework\\person.h
+	<string>
+
+1654796552 source:d:\ki_123_1kurs\coursework2022\coursework\coach.cpp
+	"Coach.h"
+
+1654796552 d:\ki_123_1kurs\coursework2022\coursework\coach.h
+
+1654851206 source:d:\ki_123_1kurs\coursework2022\coursework\tacticalscheme.cpp
+	<stdexcept>
+	"TacticalScheme.h"
+
+1654849209 d:\ki_123_1kurs\coursework2022\coursework\tacticalscheme.h
+	<string>
+
+1654849209 d:\ki_123_1kurs\coursework2022\coursework\position.h
+
