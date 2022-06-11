@@ -2,6 +2,7 @@
 #define TACTICALSCHEME_H
 
 #include <vector>
+#include "Player.h"
 
 class TacticalScheme
 {
@@ -19,8 +20,8 @@ class TacticalScheme
         void SetStrikers(const int& strikers);
 
         bool isPlayersEnough() const;
+        void ListOfSchemes(int defenders, int midfielders, int strikers) const;
 
-        std::string GetTacticalSchemeInfo() const;
 
 
     private:

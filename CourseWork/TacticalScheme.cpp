@@ -13,5 +13,17 @@ TacticalScheme::TacticalScheme(int goalkeepers, int defenders, int midfielders, 
 
 bool TacticalScheme::isPlayersEnough() const
 {
-    return (GetGoalkeepers() + GetDefenders() + GetMidfielders() + GetStrikers() = 11);
+    return (GetGoalkeepers() + GetDefenders() + GetMidfielders() + GetStrikers() == 11);
+}
+
+void TacticalScheme::ListOfSchemes(int goalkeepers, int defenders, int midfielders, int strikers) const
+{
+    if((goalkeepers == 1 && defenders == 4 && midfielders == 3 && strikers == 3) || (goalkeepers == 1 && defenders == 4 && midfielders == 5 && strikers == 1))
+    {
+        cout << "Данная тактическая схема является сбалансированной" << endl;
+    }
+    else if(goalkeepers == 1 && defenders == 4 && midfielders == 5 && strikers == 1)
+    {
+        cout << ""
+    }
 }

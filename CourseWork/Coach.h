@@ -13,7 +13,8 @@ class Coach
     protected:
 
     private:
-        unsigned int m_Counter;
+        int experience;
+
 };
 
 #endif // COACH_H
