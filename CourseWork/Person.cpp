@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Person::Person(string first_name, string last_name, string middle_name, int age, double height): first_name(first_name), last_name(last_name), middle_name(middle_name), age(age), height(height)
+Person::Person(string& first_name, string& last_name, string& middle_name, int age, double height): first_name(first_name), last_name(last_name), middle_name(middle_name), age(age), height(height)
 {
     if(height <= 0)
     {

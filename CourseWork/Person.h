@@ -5,8 +5,10 @@
 
 class Person
 {
-    public:
-    Person(std::string first_name, std::string last_name, std::string middle_name, int age, double height);
+protected:
+
+public:
+     Person(std::string& first_name, std::string& last_name, std::string& middle_name, int age, double height);
     std::string getFirstName() const;
     std::string getLastName() const;
     std::string getMiddleName() const;
@@ -24,10 +26,10 @@ class Person
     virtual std::string Info() const;
     virtual ~Person() = default;
 
-    private:
-        std::string first_name;
-        std::string last_name;
-        std::string middle_name;
+private:
+        std::string& first_name;
+        std::string& last_name;
+        std::string& middle_name;
         int age;
         double height;
 };

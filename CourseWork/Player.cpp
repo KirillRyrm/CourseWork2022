@@ -1,9 +1,10 @@
 #include <stdexcept>
+#include <string>
 #include "Player.h"
 
 using namespace std;
 
-Player::Player(string first_name, string last_name, string middle_name, int age, double height, Position position, double transfer_price): Person(first_name, last_name, middle_name, age, height), position(position), transfer_price(transfer_price)
+Player::Player(string& first_name, string& last_name, string& middle_name, int age, double height, Position position, double transfer_price): Person(first_name, last_name, middle_name, age, height), position(position), transfer_price(transfer_price)
     {
         if(transfer_price <= 0)
         {

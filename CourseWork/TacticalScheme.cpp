@@ -3,7 +3,7 @@
 
 using namespace std;
 
-TacticalScheme::TacticalScheme(int goalkeepers, int defenders, int midfielders, int strikers)
+TacticalScheme::TacticalScheme(int goalkeepers, int defenders, int midfielders, int strikers): goalkeepers(goalkeepers), defenders(defenders), midfielders(midfielders), strikers(strikers)
 {
     if((goalkeepers < 0 || goalkeepers > 1) || defenders < 0 || midfielders < 0 || strikers < 0)
     {
@@ -26,7 +26,7 @@ bool TacticalScheme::isPlayersEnough() const
      this->goalkeepers = goalkeepers;
  }
 
-    void TacticalScheme::SetDefenders(const int& defenders)
+void TacticalScheme::SetDefenders(const int& defenders)
  {
      this->defenders = defenders;
  }
