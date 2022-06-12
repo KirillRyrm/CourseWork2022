@@ -28,13 +28,16 @@
 1654796552 source:d:\ki_123_1kurs\coursework2022\coursework\coach.cpp
 	"Coach.h"
 
-1654953929 d:\ki_123_1kurs\coursework2022\coursework\coach.h
+1655037827 d:\ki_123_1kurs\coursework2022\coursework\coach.h
+	<vector>
+	"Person.h"
+	"TacticalScheme.h"
 
-1654954128 source:d:\ki_123_1kurs\coursework2022\coursework\tacticalscheme.cpp
+1655036856 source:d:\ki_123_1kurs\coursework2022\coursework\tacticalscheme.cpp
 	<stdexcept>
 	"TacticalScheme.h"
 
-1654954627 d:\ki_123_1kurs\coursework2022\coursework\tacticalscheme.h
+1655036791 d:\ki_123_1kurs\coursework2022\coursework\tacticalscheme.h
 	<vector>
 	"Player.h"
 

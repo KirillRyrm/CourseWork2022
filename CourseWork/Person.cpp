@@ -48,7 +48,7 @@ double Person::getHeight() const {
 
 string Person::Info() const
 {
-    return ("Прізвище: " + last_name + ";\n" + "Ім'я: " + first_name + ";\n" + "По-батькові: " + middle_name + ";\n" + "Вік: " + to_string(age) + ";\n" + "Ріст: " + to_string(height) + ";\n");
+    return ("Фамилия: " + last_name + ";\n" + "Имя: " + first_name + ";\n" + "Отчество: " + middle_name + ";\n" + "Возраст: " + to_string(age) + ";\n" + "Рост: " + to_string(height) + ";\n");
 }
 
 void Person::ChangeAge(const int& age)

@@ -1,18 +1,23 @@
 #ifndef COACH_H
 #define COACH_H
 
+#include <vector>
 
-class Coach
+#include "Person.h"
+#include "TacticalScheme.h"
+
+class Coach : public Person
 {
     public:
-        Coach();
+        Coach(std::string first_name, std::string last_name, std::string middle_name, int age, double height, int experience, std::vector<TacticalScheme*>& TacticalSchemes);
 
-        unsigned int GetCounter() { return m_Counter; }
-        void SetCounter(unsigned int val) { m_Counter = val; }
+        int GetExperience() const { return experience; }
+        void AddTacticalScheme(TacticalScheme* tS, int n);
+        std::string Info() const override;
 
-    protected:
 
     private:
+        std::vector<TacticalScheme*> TacticalSchemes;
         int experience;
 
 };

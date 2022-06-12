@@ -29,7 +29,7 @@ Player::Player(string first_name, string last_name, string middle_name, int age,
         break;
     }
 
-    return (Person::Info() + "Позиція гравця: " + enumToString + ";\n" + "Трансферна вартість: " + to_string(transfer_price));
+    return (Person::Info() + "Позиция игрока: " + enumToString + ";\n" + "Трансферная стоимость: " + to_string(transfer_price));
 }
 
 void Player::ChangePosition(const Position &position)

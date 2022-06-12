@@ -5,7 +5,7 @@ using namespace std;
 
 TacticalScheme::TacticalScheme(int goalkeepers, int defenders, int midfielders, int strikers)
 {
-    if(goalkeepers < 0 || defenders < 0 || midfielders < 0 || strikers < 0)
+    if((goalkeepers < 0 || goalkeepers > 1) || defenders < 0 || midfielders < 0 || strikers < 0)
     {
         throw invalid_argument("Wrong values");
     }
@@ -16,14 +16,27 @@ bool TacticalScheme::isPlayersEnough() const
     return (GetGoalkeepers() + GetDefenders() + GetMidfielders() + GetStrikers() == 11);
 }
 
-void TacticalScheme::ListOfSchemes(int goalkeepers, int defenders, int midfielders, int strikers) const
-{
-    if((goalkeepers == 1 && defenders == 4 && midfielders == 3 && strikers == 3) || (goalkeepers == 1 && defenders == 4 && midfielders == 5 && strikers == 1))
+    string TacticalScheme::GetTacticalSchemeInfo() const
     {
-        cout << "Данная тактическая схема является сбалансированной" << endl;
+        return ("Количество вратарей: " + to_string(goalkeepers) + ";\n" + "Количество защитников: " + to_string(defenders) + ";\n" + "Количество полузащитников: " + to_string(midfielders) + ";\n" + "Количество нападающих: " + to_string(strikers) + ";\n");
     }
-    else if(goalkeepers == 1 && defenders == 4 && midfielders == 5 && strikers == 1)
-    {
-        cout << ""
-    }
-}
+
+ void TacticalScheme::SetGoalkeepers(const int& goalkeepers)
+ {
+     this->goalkeepers = goalkeepers;
+ }
+
+    void TacticalScheme::SetDefenders(const int& defenders)
+ {
+     this->defenders = defenders;
+ }
+
+ void TacticalScheme::SetMidfielders(const int& midfielders)
+ {
+     this->goalkeepers = goalkeepers;
+ }
+
+ void TacticalScheme::SetStrikers(const int& strikers)
+ {
+     this->strikers = strikers;
+ }
