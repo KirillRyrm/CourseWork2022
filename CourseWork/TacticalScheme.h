@@ -7,7 +7,8 @@
 class TacticalScheme
 {
     public:
-        TacticalScheme(int goalkeepers, int defenders, int midfielders, int strikers);
+        TacticalScheme();
+        TacticalScheme(int defenders, int midfielders, int strikers, int goalkeepers = 1);
 
         int GetGoalkeepers() const { return goalkeepers; }
         int GetDefenders() const { return defenders; }
