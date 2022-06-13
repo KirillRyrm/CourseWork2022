@@ -22,6 +22,8 @@ class TacticalScheme
 
         bool isPlayersEnough() const;
 
+        std::string Info() const;
+
         std::string GetTacticalSchemeInfo() const;
 
 

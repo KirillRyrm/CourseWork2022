@@ -14,8 +14,6 @@ class Team
         void RemovePlayer(Player* player);
         void AddCoach(Coach* coach);
         void RemoveCoach(Coach* coach);
-        void CreateScheme(Matchmaking* match) const;
-        void PreparingForMatch(Matchmaking* match);
         void Print() const;
         std::string GetName() const { return name; }
         std::string GetCountry() const { return country; }
