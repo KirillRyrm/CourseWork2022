@@ -17,7 +17,7 @@ class Player : public Person
         void ChangePosition(const Position &position);
         void ChangeTransferPrice(const double& transfer_price);
 
-
+        virtual ~Player();
 
     private:
         Position position;
