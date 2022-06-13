@@ -18,3 +18,7 @@ Coach::Coach(string& first_name, string& last_name, string& middle_name, int age
     }
 }
 
+string Coach::Info() const
+{
+    return (Person::Info() + "Опыт работы: " + to_string(experience) + ";\n" + "Список тактических схем: " + to_string(TacticalSchemes.size()) + ";\n");
+}
