@@ -1,19 +1,23 @@
 #ifndef TEAM_H
 #define TEAM_H
 
+#include <vector>
+#include "Player.h"
+#include "Coach.h"
 
-class Team
+class Team : public Player
 {
     public:
-        Team();
-
-        unsigned int GetCounter() { return m_Counter; }
-        void SetCounter(unsigned int val) { m_Counter = val; }
-
-    protected:
+        Team(std::string name, std::string country, std::vector<Player*>& players, std::vector<Coach*>& coaches);
+        std::string GetName() const { return name; }
+        std::string GetCountry() const { return country; }
+        bool isTeamFull() const;
 
     private:
-        unsigned int m_Counter;
+       std::string name;
+       std::string country;
+       std::vector<Player*> players;
+       std::vector<Coach*> coaches;
 };
 
 #endif // TEAM_H

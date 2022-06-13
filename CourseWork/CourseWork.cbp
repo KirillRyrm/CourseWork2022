@@ -36,6 +36,8 @@
 		</Compiler>
 		<Unit filename="Coach.cpp" />
 		<Unit filename="Coach.h" />
+		<Unit filename="Matchmaking.cpp" />
+		<Unit filename="Matchmaking.h" />
 		<Unit filename="Person.cpp" />
 		<Unit filename="Person.h" />
 		<Unit filename="Player.cpp" />
@@ -43,6 +45,8 @@
 		<Unit filename="Position.h" />
 		<Unit filename="TacticalScheme.cpp" />
 		<Unit filename="TacticalScheme.h" />
+		<Unit filename="Team.cpp" />
+		<Unit filename="Team.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
