@@ -8,9 +8,9 @@
 class Matchmaking
 {
     public:
-        Matchmaking(Team* team1, Team* team2);
+        Matchmaking();
         void FixScore(int score1, int score2);
-        void CreateMatch() const;
+        void CreateMatch(Team* team)
         void SetTacticalScheme1(TacticalScheme* tS1) { tacticalscheme1 = tS1; }
         void SetTacticalScheme2(TacticalScheme* tS2) { tacticalscheme2 = tS2; }
 

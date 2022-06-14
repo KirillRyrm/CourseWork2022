@@ -8,6 +8,6 @@ using namespace std;
 
 int main()
 {
-
-    return 0;
+     MatchMenu MatchMenu;
+     MatchMenu.Menu();
 }

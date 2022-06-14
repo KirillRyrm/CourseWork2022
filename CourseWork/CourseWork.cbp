@@ -36,6 +36,8 @@
 		</Compiler>
 		<Unit filename="Coach.cpp" />
 		<Unit filename="Coach.h" />
+		<Unit filename="MatchMenu.cpp" />
+		<Unit filename="MatchMenu.h" />
 		<Unit filename="Matchmaking.cpp" />
 		<Unit filename="Matchmaking.h" />
 		<Unit filename="Person.cpp" />
