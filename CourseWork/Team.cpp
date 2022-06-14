@@ -1,3 +1,5 @@
+#include <iostream>
+#include <stdexcept>
 #include <algorithm>
 #include "Team.h"
 #include "Player.h"
@@ -5,9 +7,12 @@
 
 using namespace std;
 
-Team::Team(std::string name, std::string country, std::vector<Player*>& players, std::vector<Coach*>& coaches):
+Team::Team(string name, string country, vector<Player*>& players, vector<Coach*>& coaches)
 {
-
+    if(name == "\0" || country == "\0")
+    {
+        throw invalid_argument("Wrong values");
+    }
 }
 
 void Team::RemovePlayer(Player* player)
@@ -39,6 +44,7 @@ void Team::AddPlayer(Player* player)
     {
         throw invalid_argument("Player found");
     }
+    Player* tmp = player;
     players.push_back(tmp);
 
 }
@@ -49,10 +55,11 @@ void Team::AddCoach(Coach* coach)
     {
         throw invalid_argument("Coach found");
     }
+    Coach* tmp = coach;
     coaches.push_back(tmp);
 }
 
-void Team::Print()
+void Team::Print() const
 {
    cout << ("Название команды: " + name + ";\n" + "Страна: " + country + ";\n");
    cout << "Состав команды:\n";
@@ -67,4 +74,9 @@ void Team::Print()
        cout << coach->Info();
        cout << endl;
    }
+}
+
+void Team::TeamInfo() const
+{
+    return ("Название команды: " + name + ";\n" + "Страна: " + country + ";\n");
 }

@@ -17,7 +17,7 @@ class Team
         void Print() const;
         std::string GetName() const { return name; }
         std::string GetCountry() const { return country; }
-        bool isTeamFull() const;
+        std::string TeamInfo() const;
 
     private:
        std::string name;

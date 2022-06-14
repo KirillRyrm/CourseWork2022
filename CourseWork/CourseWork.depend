@@ -4,7 +4,7 @@
 	<string>
 	"Player.h"
 
-1655065190 d:\ki_123_1kurs\coursework2022\coursework\player.h
+1655142476 d:\ki_123_1kurs\coursework2022\coursework\player.h
 	<string>
 	"Person.h"
 	"Position.h"
@@ -26,7 +26,7 @@
 1654807493 d:\ki_123_1kurs\coursework2022\coursework\\person.h
 	<string>
 
-1655065565 source:d:\ki_123_1kurs\coursework2022\coursework\coach.cpp
+1655131725 source:d:\ki_123_1kurs\coursework2022\coursework\coach.cpp
 	<iostream>
 	<stdexcept>
 	<vector>
@@ -43,9 +43,22 @@
 	<stdexcept>
 	"TacticalScheme.h"
 
-1655036791 d:\ki_123_1kurs\coursework2022\coursework\tacticalscheme.h
+1655144968 d:\ki_123_1kurs\coursework2022\coursework\tacticalscheme.h
 	<vector>
 	"Player.h"
 
 1654849209 d:\ki_123_1kurs\coursework2022\coursework\position.h
+
+1655207619 source:d:\ki_123_1kurs\coursework2022\coursework\matchmaking.cpp
+	"Matchmaking.h"
+
+1655207619 d:\ki_123_1kurs\coursework2022\coursework\matchmaking.h
+	"Player.h"
+	"Team.h"
+	"Coach.h"
+
+1655144968 d:\ki_123_1kurs\coursework2022\coursework\team.h
+	<vector>
+	"Player.h"
+	"Coach.h"
 
