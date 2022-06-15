@@ -1,16 +1,16 @@
 #ifndef MATCHMAKING_H
 #define MATCHMAKING_H
 
-#include "Player.h"
+#include "model/person/Player.h"
 #include "Team.h"
-#include "Coach.h"
+#include "model/person/Coach.h"
 
 class Matchmaking
 {
     public:
         Matchmaking();
         void FixScore(int score1, int score2);
-        void CreateMatch(Team* team)
+        void CreateMatch(Team* team);
         void SetTacticalScheme1(TacticalScheme* tS1) { tacticalscheme1 = tS1; }
         void SetTacticalScheme2(TacticalScheme* tS2) { tacticalscheme2 = tS2; }
 
@@ -31,9 +31,3 @@ class Matchmaking
 
 
 
-/*Введите название первой команды - ...accumulate
-Подберите тактическую сзему для первой команды - 3 5 2
-Введите назване второй команды - ...accumulate
-Подберите для второй команды - 4 3 3
-Вывести список игроков матча первой команды
-Вывести список игроков матча второй команды*/

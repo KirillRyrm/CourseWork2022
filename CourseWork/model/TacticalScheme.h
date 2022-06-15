@@ -2,7 +2,7 @@
 #define TACTICALSCHEME_H
 
 #include <vector>
-#include "Player.h"
+#include "model/person/Player.h"
 
 
 
@@ -27,10 +27,7 @@ class TacticalScheme
         std::string Info() const;
 
         std::string GetTacticalSchemeInfo() const;
-
-
-
-
+    friend std::ostream& operator<<(std::ostream& os, const TacticalScheme& dt);
 
     private:
         int goalkeepers, defenders, midfielders, strikers;

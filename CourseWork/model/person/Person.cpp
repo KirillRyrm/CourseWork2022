@@ -4,7 +4,8 @@
 
 using namespace std;
 
-Person::Person(string& first_name, string& last_name, string& middle_name, int age, double height): first_name(first_name), last_name(last_name), middle_name(middle_name), age(age), height(height)
+Person::Person(string& first_name, string& last_name, string& middle_name, int age, double height):
+first_name(first_name), last_name(last_name), middle_name(middle_name), age(age), height(height)
 {
     if(height <= 0)
     {
@@ -48,7 +49,7 @@ double Person::getHeight() const {
 
 string Person::Info() const
 {
-    return ("Фамилия: " + last_name + ";\n" + "Имя: " + first_name + ";\n" + "Отчество: " + middle_name + ";\n" + "Возраст: " + to_string(age) + ";\n" + "Рост: " + to_string(height) + ";\n");
+    return ("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " + last_name + ";\n" + "пїЅпїЅпїЅ: " + first_name + ";\n" + "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " + middle_name + ";\n" + "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " + to_string(age) + ";\n" + "пїЅпїЅпїЅпїЅ: " + to_string(height) + ";\n");
 }
 
 void Person::ChangeAge(const int& age)

@@ -4,7 +4,7 @@
 #include <vector>
 
 #include "Person.h"
-#include "TacticalScheme.h"
+#include "model/TacticalScheme.h"
 
 class Coach : public Person
 {
@@ -13,9 +13,11 @@ class Coach : public Person
 
         int GetExperience() const { return experience; }
 
-        std::string Info() const override;
+        friend std::ostream& operator<<(std::ostream& os, const Coach& dt);
 
-    private:
+    const std::vector<TacticalScheme *> &getTacticalSchemes() const;
+
+private:
         int experience;
         std::vector<TacticalScheme*> TacticalSchemes;
 

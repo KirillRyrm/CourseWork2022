@@ -3,7 +3,8 @@
 
 #include <string>
 #include "Person.h"
-#include "Position.h"
+#include "model/Position.h"
+#include <iostream>
 
 
 class Player : public Person
@@ -17,7 +18,8 @@ class Player : public Person
         void ChangePosition(const Position &position);
         void ChangeTransferPrice(const double& transfer_price);
 
-        virtual ~Player();
+        ~Player(){}
+        friend std::ostream& operator<<(std::ostream& os, const Player& dt);
 
     private:
         Position position;

@@ -2,11 +2,11 @@
 #define MATCHMENU_H
 #include <iostream>
 #include <vector>
-#include "Player.h"
-#include "Coach.h"
-#include "TacticalScheme.h"
-#include "Team.h"
-#include "Matchmaking.h"
+#include "model/person/Player.h"
+#include "model/person/Coach.h"
+#include "model/TacticalScheme.h"
+#include "model/Team.h"
+#include "model/Matchmaking.h"
 
 class MatchMenu
 {

@@ -1,3 +1,4 @@
+/*
 #include "MatchMenu.h"
 #include <cstdlib>
 
@@ -11,7 +12,7 @@ void MatchMenu::Menu()
     string coach1;
     string coach2;
     vector<string> players_1 = {"Maguire", "Shaw", "Varan", "Telles", "Pogba", "Matic", "Fred", "De Gea", "Ronaldo", "Rashford", "Martial"};
-    vector<string> players_2 = {"Skriniar", "Bastoni", "De Vrij", "Darmian", "Barella", "Brozovic", "Chalhangolu", "Perisic", "Lukaku", "Martinez", "Handanovic"}
+    vector<string> players_2 = {"Skriniar", "Bastoni", "De Vrij", "Darmian", "Barella", "Brozovic", "Chalhangolu", "Perisic", "Lukaku", "Martinez", "Handanovic"};
     Team *team1;
     Team *team2;
     TacticalScheme *tS1;
@@ -31,7 +32,7 @@ void MatchMenu::Menu()
                     do {
                          cout << "|------------------------------------|\n"
                                 "|1. Create the first team             |\n"
-                                "|2. Create the second team             |\n"
+                                "|2. Create the second team             |\n";
                     cin >> number1;
                     switch(number1)
                     {
@@ -45,9 +46,9 @@ void MatchMenu::Menu()
                         cout << "Введите тренера: " << endl;
                         cin >> coach1;
                         cout << "Введите тактическую схему первой команды: " << endl;
-                        cin >> ...
+                        //cin >> ...
                         //Подбор игроков...
-                        team1 = new Team1(name, country, players_1, coach1, ...);
+                        team1 = new Team(name, country, players_1, coach1);
                         break;
                     case '2':
                         cout << "Введите название команды: " << endl;
@@ -98,3 +99,4 @@ default:
 		}
 		catch (const std::exception& ex) { std::cerr << ex.what() << "\n"; }
     } while (number != 0);
+*/

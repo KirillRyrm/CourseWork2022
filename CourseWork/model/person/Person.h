@@ -26,10 +26,10 @@ public:
     virtual std::string Info() const;
     virtual ~Person() = default;
 
-private:
-        std::string& first_name;
-        std::string& last_name;
-        std::string& middle_name;
+protected:
+        std::string first_name;
+        std::string last_name;
+        std::string middle_name;
         int age;
         double height;
 };
