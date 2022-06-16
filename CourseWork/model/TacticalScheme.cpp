@@ -19,7 +19,7 @@ bool TacticalScheme::isPlayersEnough() const
 
     string TacticalScheme::GetTacticalSchemeInfo() const
     {
-        return ("���������� ��������: " + to_string(goalkeepers) + ";\n" + "���������� ����������: " + to_string(defenders) + ";\n" + "���������� ��������������: " + to_string(midfielders) + ";\n" + "���������� ����������: " + to_string(strikers) + ";\n");
+        return ("Кол-во вратарей: " + to_string(goalkeepers) + ";\n" + "Кол-во защитников: " + to_string(defenders) + ";\n" + "Кол-во полузащитников: " + to_string(midfielders) + ";\n" + "Кол-во нападающих: " + to_string(strikers) + ";\n");
     }
 
  void TacticalScheme::SetGoalkeepers(const int& goalkeepers)
