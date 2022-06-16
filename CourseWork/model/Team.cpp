@@ -24,13 +24,13 @@ void Team::RemovePlayer(Player* player)
     }
     Player* tmp = player;
     delete player;
-    /*players.erase(tmp);*/
+
 }
 
 void Team::RemoveCoach()
 {
     this->coach = nullptr;
-    /*coaches.erase(tmp);*/
+
 }
 
 void Team::AddPlayer(Player* player)
@@ -54,11 +54,11 @@ void Team::AddCoach(Coach* coach)
 std::ostream &operator<<(ostream &os, const Team &dt) {
     int width = 40;
     os << std::left << std::string( width, '-' )<<"\n";
-    os << std::left << std::setw(39) << ("| name: "    +  dt.name)                        << "|" << std::endl;             //<<std::string(width-8-dt.getFirstName().size()-1, ' ')<<"|\n";
-    os << std::left << std::setw(39) << ("| country: " +  dt.country)                     << "|" << std::endl;             //<<std::string(width-11-dt.getLastName().size()-1, ' ')<<"|\n";
-    os << std::left << std::setw(39) << ("| coach: "   + (dt.coach== nullptr?"none": dt.coach->getFirstName()))       << "|" << std::endl;             //<<std::string(width-7-std::to_string(dt.getAge()).size()-1, ' ')<<"|\n";
-    os << std::left << std::setw(39) << ("| members: "  +  std::to_string(dt.players.size()))       << "|" << std::endl;             //<<std::string(width-10-std::to_string(dt.getHeight()).length()-1, ' ')<<"|\n";
-    os << std::left << std::setw(39) << ("| trained: "   + std::to_string(dt.trained.size()))       << "|" << std::endl;             //<<std::string(width-7-std::to_string(dt.getAge()).size()-1, ' ')<<"|\n";
+    os << std::left << std::setw(39) << ("| name: "    +  dt.name)                        << "|" << std::endl;
+    os << std::left << std::setw(39) << ("| country: " +  dt.country)                     << "|" << std::endl;
+    os << std::left << std::setw(39) << ("| coach: "   + (dt.coach== nullptr?"none": dt.coach->getFirstName()))       << "|" << std::endl;
+    os << std::left << std::setw(39) << ("| members: "  +  std::to_string(dt.players.size()))       << "|" << std::endl;
+    os << std::left << std::setw(39) << ("| trained: "   + std::to_string(dt.trained.size()))       << "|" << std::endl;
 
     os<<std::string( width, '-' )<<"\n";;
     return os;
