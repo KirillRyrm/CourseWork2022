@@ -20,7 +20,7 @@ public:
 
         try {
             teams.push_back(new Team(name, country));
-        }catch (std::exception e){
+        }catch (std::exception &e){
             std::cerr<<"please type name or country\n";
         }
     }

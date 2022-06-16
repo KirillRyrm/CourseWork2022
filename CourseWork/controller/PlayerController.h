@@ -61,7 +61,7 @@ public:
                 std::cin>>id;
                 try {
                     players.push_back(this->players.at(id));
-                }catch (std::exception e){
+                }catch (std::exception &e){
                     id=-1;
                 }
             } while (id!=-1);
