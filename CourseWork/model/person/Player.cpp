@@ -20,20 +20,20 @@ Person(first_name, last_name, middle_name, age, height), position(position), tra
     switch(position)
     {
     case Position::goalkeeper:
-        enumToString = "�������";
+        enumToString = "Вратарь";
         break;
     case Position::defender:
-        enumToString = "��������";
+        enumToString = "Защитник";
         break;
     case Position::midfielder:
-        enumToString = "ϳ���������";
+        enumToString = "Полузащитник";
         break;
     case Position::striker:
-        enumToString = "��������";
+        enumToString = "Нападающий";
         break;
     }
 
-    return (Person::Info() + "������� ������: " + enumToString + ";\n" + "����������� ���������: " + to_string(transfer_price));
+    return (Person::Info() + "Позиция игрока: " + enumToString + ";\n" + "Трансферная цена: " + to_string(transfer_price));
 }
 
 void Player::ChangePosition(const Position &position)
